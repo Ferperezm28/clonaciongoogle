@@ -1,0 +1,217 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    width: 100%;
+    height: 60px;
+}
+/*flex box*/
+header nav{
+    /*ajustar segun el tamaño de la pagina*/
+    display: flex;
+    /*mover el texto a la izquierda*/
+    justify-content: flex-end;
+}
+a{
+    /*quitar las lineas de hipervinculo*/
+    text-decoration: none;
+    /*modificar el cursor en de flecha a manita*/
+    cursor: pointer;
+}
+/*aplicar cambios en una seccion*/
+header nav .nav-right-section {
+    width: 250px;
+    height: auto;
+    display: flex;
+    /*quitar los puntos de la lista*/
+    list-style: none;
+    /*centar el texto independiente de las modifcaciones*/
+    justify-content: center;
+    align-items: center;
+}
+/*caracteristicas a las a en navegacion que pertencecen a la classe*/
+nav .nav-right-section a {
+    /*agregar espacio hacia la derecha*/
+    margin-right: 25px;
+    color:black;
+}
+
+nav .nav-right-section img {
+    /*modificar la forma de la foto a circular*/
+    border-radius: 80px;
+    /*separar de la palabra icono, espacio a la izquierda*/
+    margin-left: 15px;
+    /*modificar tamaño de la foto*/
+    width: 35px;
+    height: 35px;
+}
+
+/*agregar icono*/
+nav .nav-right-section .menu-icon {
+    /*agregar imagen del icono por url*/
+    background-image: url('https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png');
+    /*solo poner una vez y volverlo claro*/
+    background-repeat: no-repeat;
+    /*posicionar la imagen*/
+    background-position: center;
+    background-size: contain;
+    /*tamaño de la imagen*/
+    width: 27px;
+    height: 27px;
+}
+
+/*estilo del main*/
+main{
+    margin-top: 80px; /*margen arriba*/
+    text-align: center; /*alinear al centro*/
+
+}
+
+/*Ajustar seccion del logo de google*/
+main .main-logo{
+    width: 530px; /*ancho de la seccion*/
+    margin: 0 auto; /*que el margen se mueva junto con el main*/
+    margin-bottom: 35px; /*margen de abajo*/
+}
+/*ajustar imagen del logo*/
+main .main-logo img{
+    width: 330px;
+    height: 125px;
+}
+
+/*ubicar seccion de barra buscadora*/
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+
+}
+/*dar forma a la barra*/
+main .main-input-container{
+    width: 525px;
+    /*redonderar borde de la barra*/
+    border-radius: 100px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    /*centrar los elementos*/
+    justify-content: center;
+    align-items: center; 
+}
+/*ajustar entrada de texto*/
+main .main-input input{
+    width:  450px;
+    height: 40px;
+    border: none;
+    outline: none;
+}
+
+/*resaltar barra con el cursor*/
+main .main-input-container:hover{ /*hover=sombrear*/
+    box-shadow: 0 1px 6px 0 #20212447; /*valores segun las manecillas del reloj, arriba cero, der-1 abajo-6 izq-0 color*/
+
+}
+/*icono de lupa*/
+main .main-input .search-icon{
+    background-image: url('https://cdn.pixabay.com/photo/2017/01/13/01/22/magnifying-glass-1976105_1280.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    margin-left: 15px;
+
+}
+/*icono de camara*/
+main .main-input .camare-icon{
+    background-image: url('https://fonts.gstatic.com/s/i/productlogos/lens_camera/v1/192px.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+/*icono de microfono*/
+main .main-input .micro-icon{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+ /*estilo a la seccion de botones*/
+main .main-buttons{
+    width: 530px;
+    margin: 0 auto;
+
+}
+/*formato division con los botones*/
+main .main-buttons div{
+    display: inline-block; /*pone los botones en linea*/
+}
+/*dar formato al boton*/
+main .main-buttons button{
+    height: 36px;
+    background-color: #f8f9fa;
+    border: 0; /*quitar borde*/
+    font-size: 14px;
+    color: #5f6368; /*color de las letras*/
+    border-radius: 6px;
+    padding: 0 15px; /*margen del borde a las letras*/
+    margin-right: 12px; /*separacion entre ambos botones*/
+
+}
+ 
+/*efecto del boton*/
+main .main-buttons button:hover{
+    border: 1px solid #c6c6c6; /*efecto seleccion*/
+    box-shadow: 0 0.5px 1px 0 #000001; /*sombra*/
+    color: #222;
+    cursor: pointer; /*manita*/
+}
+
+/*estilo del footer*/
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: #f2f2f2;
+    position: absolute;
+    bottom: 0; /*baja la seccion*/
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*formato en cuadricula para dos columnas*/
+    align-items: center;
+    font-size: 13px;
+    border-top: 1px solid #e4e4e4;/*linea divisoria arriba*/
+}
+
+/*Estilo a las listas*/
+footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+
+}
+
+/*estilo a lista izquierda*/
+footer .footer-left{
+    justify-self: left; /*alinear a la derecha*/
+}
+
+/*estilo a la lista derecha*/
+footer .footer-right{
+    justify-self: right;
+}
+
+/*estilo de elemenos a*/
+footer ul li a{ /*elementos que esta en el footer, dentro de un ul y li y a*/
+    margin: 10px; /*separar elementos*/
+    color: #5f6368;
+}
